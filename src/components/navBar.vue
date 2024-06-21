@@ -2,11 +2,12 @@
   <header>
     <nav class="navigation">
       <!--router-link to verwenden statt <a>-->
-      <a class="logo" href="">SoulStones</a>
+      <a class="logo">SoulStones</a>
       <a href="">Home</a>
-      <router-link to="/ourProducts">Our Products</router-link>
-      <a href="">Contact</a>
+      <router-link to="/Products">Our Products</router-link>
+      <router-link to="/Contact">Contact</router-link>
     </nav>
+    <!-- <router-view /> -->
   </header>
 </template>
 
