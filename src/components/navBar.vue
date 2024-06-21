@@ -3,9 +3,9 @@
     <nav class="navigation">
       <!--router-link to verwenden statt <a>-->
       <a class="logo">SoulStones</a>
-      <a href="">Home</a>
-      <router-link to="/Products">Our Products</router-link>
-      <router-link to="/Contact">Contact</router-link>
+      <router-link to="/home">Home</router-link>
+      <router-link to="/products">Our Products</router-link>
+      <router-link to="/contact">Contact</router-link>
     </nav>
     <!-- <router-view /> -->
   </header>

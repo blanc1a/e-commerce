@@ -1,12 +1,14 @@
 <template>
   <navBar />
-  <p>HALLLLLLLOOOOOOOOOOOOOOOOOOOOO</p>
+  <productRange />
 </template>
 <script>
 import navBar from "./navBar.vue";
+import productRange from "./productRange.vue";
 export default {
   components: {
     navBar,
+    productRange,
   },
 };
 </script>
