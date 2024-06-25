@@ -5,11 +5,26 @@
       <p>Feel free to explore our product range.</p>
       <div class="filter-area">
         <span>Filter by price:</span>
-        <select name="price" id="price">
-          <option value="default">Default</option>
-          <option value="fromLowest">Low to high</option>
-          <option value="fromHighest">High to low</option>
-        </select>
+        <!--click-event => alternative zu eventListener-->
+        <div class="drop-down" @click="toggleDropDown">
+          <!--bindet die selectedOption-Daten an das p Element und zeigt die aktuell ausgewählte Option an-->
+          <p>{{ selectedOption }}</p>
+          <!--v-if bindet die Sichtbarkeit der ul-Liste an die isOpen-Daten-->
+          <ul
+            id="drop-down-list"
+            class="drop-down-list"
+            ref="dropDownList"
+            v-if="isOpen"
+          >
+            <!--@click.stop.prevent verhindern das Standardverhalten des Links, stoppen die Ereignisausbreitung und führen die selectOption() aus-->
+            <li @click.stop.prevent="selectOption('Low to high')">
+              <a href="">Low to high</a>
+            </li>
+            <li @click.stop.prevent="selectOption('High to low')">
+              <a href="">High to low</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="product-container">
@@ -19,6 +34,10 @@
           <h3>Ring Name</h3>
           <span>50€</span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="buttons">
+            <button>Add to card</button>
+            <button>Buy now</button>
+          </div>
         </div>
       </div>
       <div class="card">
@@ -27,6 +46,10 @@
           <h3>Ring Name</h3>
           <span>40€</span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="buttons">
+            <button>Add to card</button>
+            <button>Buy now</button>
+          </div>
         </div>
       </div>
       <div class="card">
@@ -35,6 +58,10 @@
           <h3>Ring Name</h3>
           <span>60€</span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="buttons">
+            <button>Add to card</button>
+            <button>Buy now</button>
+          </div>
         </div>
       </div>
       <div class="card">
@@ -43,6 +70,10 @@
           <h3>Ring Name</h3>
           <span>35€</span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="buttons">
+            <button>Add to card</button>
+            <button>Buy now</button>
+          </div>
         </div>
       </div>
       <div class="card">
@@ -51,6 +82,10 @@
           <h3>Ring Name</h3>
           <span>55€</span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="buttons">
+            <button>Add to card</button>
+            <button>Buy now</button>
+          </div>
         </div>
       </div>
       <div class="card">
@@ -59,6 +94,10 @@
           <h3>Ring Name</h3>
           <span>20€</span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="buttons">
+            <button>Add to card</button>
+            <button>Buy now</button>
+          </div>
         </div>
       </div>
       <div class="card">
@@ -67,6 +106,10 @@
           <h3>Ring Name</h3>
           <span>70€</span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="buttons">
+            <button>Add to card</button>
+            <button>Buy now</button>
+          </div>
         </div>
       </div>
       <div class="card">
@@ -75,6 +118,10 @@
           <h3>Ring Name</h3>
           <span>50€</span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="buttons">
+            <button>Add to card</button>
+            <button>Buy now</button>
+          </div>
         </div>
       </div>
       <div class="card">
@@ -83,6 +130,10 @@
           <h3>Ring Name</h3>
           <span>56€</span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="buttons">
+            <button>Add to card</button>
+            <button>Buy now</button>
+          </div>
         </div>
       </div>
       <div class="card">
@@ -91,6 +142,10 @@
           <h3>Ring Name</h3>
           <span>45€</span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="buttons">
+            <button>Add to card</button>
+            <button>Buy now</button>
+          </div>
         </div>
       </div>
       <div class="card">
@@ -99,6 +154,10 @@
           <h3>Ring Name</h3>
           <span>50€</span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="buttons">
+            <button>Add to card</button>
+            <button>Buy now</button>
+          </div>
         </div>
       </div>
       <div class="card">
@@ -107,6 +166,10 @@
           <h3>Ring Name</h3>
           <span>35€</span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="buttons">
+            <button>Add to card</button>
+            <button>Buy now</button>
+          </div>
         </div>
       </div>
       <div class="card">
@@ -115,6 +178,10 @@
           <h3>Ring Name</h3>
           <span>65€</span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="buttons">
+            <button>Add to card</button>
+            <button>Buy now</button>
+          </div>
         </div>
       </div>
       <div class="card">
@@ -123,6 +190,10 @@
           <h3>Ring Name</h3>
           <span>40€</span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="buttons">
+            <button>Add to card</button>
+            <button>Buy now</button>
+          </div>
         </div>
       </div>
       <div class="card">
@@ -131,6 +202,10 @@
           <h3>Ring Name</h3>
           <span>60€</span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="buttons">
+            <button>Add to card</button>
+            <button>Buy now</button>
+          </div>
         </div>
       </div>
       <div class="card">
@@ -139,6 +214,10 @@
           <h3>Ring Name</h3>
           <span>35€</span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="buttons">
+            <button>Add to card</button>
+            <button>Buy now</button>
+          </div>
         </div>
       </div>
     </div>
@@ -167,6 +246,8 @@ export default {
   name: "landingPage",
   data() {
     return {
+      isOpen: false,
+      selectedOption: "Default",
       ringOne,
       ringTwo,
       ringThree,
@@ -185,6 +266,16 @@ export default {
       ringSixteen,
       background,
     };
+  },
+  methods: {
+    toggleDropDown() {
+      this.isOpen = !this.isOpen;
+    },
+    selectOption(option) {
+      console.log("Option selected:", option); // Log the selected option
+      this.selectedOption = option;
+      this.isOpen = false;
+    },
   },
 };
 </script>
@@ -210,6 +301,47 @@ export default {
   gap: 1rem;
 }
 
+.drop-down {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.drop-down p {
+  font-family: Charmonman;
+  width: 12rem;
+  margin-left: 1rem;
+}
+.drop-down-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.drop-down-list li {
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.drop-down-list li a {
+  text-decoration: none;
+  color: white;
+}
+.drop-down-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.drop-down-list li a:hover {
+  color: black;
+}
+
 .product-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -221,15 +353,15 @@ export default {
 }
 
 .card {
-  background-color: #b8875d;
+  background-color: #5c432e;
   height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: auto;
-
-  border: solid white 1px;
+  /* 
+  border: solid white 1px; */
   border-radius: 6px;
 }
 
@@ -249,6 +381,21 @@ export default {
   bottom: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+.buttons button {
+  all: unset;
+  background-color: #2e2117;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.buttons button:hover {
+  text-shadow: #fc0 1px 0 10px;
 }
 
 .card:hover {
