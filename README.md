@@ -28,6 +28,20 @@ npm run lint
 npm install vue-router@next
 ```
 
-### Customize configuration
+### Add Mock API
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+create db.json file
+
+```
+npm install json-server
+```
+
+in package.json is now a new dependency for json-server
+
+```
+npx json-server --watch data/db.json
+```
+
+to watch the file
+
+good video on this topic: https://www.youtube.com/watch?v=7iDGJolHFmU

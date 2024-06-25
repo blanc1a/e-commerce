@@ -5,7 +5,7 @@ import productPage from "@/components/productPage.vue";
 
 import { createWebHistory, createRouter } from "vue-router";
 const routes = [
-  { path: "/home", name: "home", component: home },
+  { path: "/", name: "home", component: home },
   { path: "/products", name: "products", component: ourProducts },
   { path: "/contact", name: "contact", component: contactOverview },
   { path: "/product/:id", name: "product", component: productPage },

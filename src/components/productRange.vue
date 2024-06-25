@@ -28,6 +28,19 @@
       </div>
     </div>
     <div class="product-container">
+      <div v-for="product in products" :key="product.id" class="card">
+        <img :src="require(product.image)" :alt="product.name" />
+        <div class="product-text">
+          <h3>{{ product.name }}</h3>
+          <span>{{ product.description }}</span>
+          <div class="buttons">
+            <button>Add to card</button>
+            <button>Buy now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="product-container">
       <div class="card">
         <img :src="ringOne" alt="" />
         <div class="product-text">
@@ -220,7 +233,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
 
@@ -242,6 +255,7 @@ import ringFourteen from "@/assets/images/ring-14.jpg";
 import ringFifteen from "@/assets/images/ring-15.jpg";
 import ringSixteen from "@/assets/images/ring-16.jpg";
 import background from "@/assets/images/bg.jpg";
+
 export default {
   name: "landingPage",
   data() {
@@ -265,7 +279,14 @@ export default {
       ringFifteen,
       ringSixteen,
       background,
+      products: [],
     };
+  },
+  mounted() {
+    fetch("http://localhost:3000/ring")
+      .then((response) => response.json())
+      .then((data) => (this.producs = data))
+      .catch((error) => console.log(error.message));
   },
   methods: {
     toggleDropDown() {

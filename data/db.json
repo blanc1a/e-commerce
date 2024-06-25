@@ -1,0 +1,116 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Ring One",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
+      "image": "./assets/images/ring-1.jpg",
+      "price": 50
+    },
+    {
+      "id": 2,
+      "name": "Ring Two",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam",
+      "image": "./assets/images/ring-2.jpg",
+      "price": 40
+    },
+    {
+      "id": 3,
+      "name": "Ring Three",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt",
+      "image": "./assets/images/ring-3.jpg",
+      "price": 60
+    },
+    {
+      "id": 4,
+      "name": "Ring Four",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+      "image": "./assets/images/ring-4.jpg",
+      "price": 35
+    },
+    {
+      "id": 5,
+      "name": "Ring Five",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed",
+      "image": "./assets/images/ring-5.jpg",
+      "price": 55
+    },
+    {
+      "id": 6,
+      "name": "Ring Six",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore",
+      "image": "./assets/images/ring-6.jpg",
+      "price": 20
+    },
+    {
+      "id": 7,
+      "name": "Ring Seven",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore",
+      "image": "./assets/images/ring-7.jpg",
+      "price": 70
+    },
+    {
+      "id": 8,
+      "name": "Ring Eight",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
+      "image": "./assets/images/ring-8.jpg",
+      "price": 50
+    },
+    {
+      "id": 9,
+      "name": "Ring Nine",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
+      "image": "./assets/images/ring-9.jpg",
+      "price": 56
+    },
+    {
+      "id": 10,
+      "name": "Ring Ten",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
+      "image": "./assets/images/ring-10.jpg",
+      "price": 45
+    },
+    {
+      "id": 11,
+      "name": "Ring Eleven",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
+      "image": "./assets/images/ring-11.jpg",
+      "price": 50
+    },
+    {
+      "id": 12,
+      "name": "Ring Twelve",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
+      "image": "./assets/images/ring-12.jpg",
+      "price": 35
+    },
+    {
+      "id": 13,
+      "name": "Ring Thirteen",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At",
+      "image": "./assets/images/ring-13.jpg",
+      "price": 65
+    },
+    {
+      "id": 14,
+      "name": "Ring Fourteen",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,",
+      "image": "./assets/images/ring-14.jpg",
+      "price": 40
+    },
+    {
+      "id": 15,
+      "name": "Ring Fifteen",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At",
+      "image": "./assets/images/ring-15.jpg",
+      "price": 60
+    },
+    {
+      "id": 16,
+      "name": "Ring Sixteen",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,",
+      "image": "./assets/images/ring-16.jpg",
+      "price": 35
+    }
+  ]
+}

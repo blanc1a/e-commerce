@@ -12,20 +12,13 @@ import navBar from "./navBar.vue";
 
 export default {
   default() {
-    return {
-      product: {},
-    };
+    return {};
   },
-  created() {
-    const productID = this.$route.params.id;
-    this.fetchProduct(productID);
-  },
+  created() {},
   components: {
     navBar,
   },
-  method: {
-    fetchProduct(productID) {},
-  },
+  method: {},
 };
 </script>
 
